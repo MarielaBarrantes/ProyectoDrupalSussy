@@ -1,0 +1,9 @@
+uuid: f9e3e28e-75e7-46df-a0d8-9f11c346c00f
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions: {  }

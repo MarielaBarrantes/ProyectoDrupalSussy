@@ -1,0 +1,9 @@
+uuid: 8e19de26-af77-4b52-bad5-ddfbe37a65ef
+langcode: en
+status: true
+dependencies: {  }
+id: parrafo2
+label: parrafo2
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

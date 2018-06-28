@@ -1,0 +1,21 @@
+uuid: e11979d5-7600-49df-ba8b-5f5a95a30b6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_textolargo
+    - paragraphs.paragraphs_type.parrafo2
+  module:
+    - text
+id: paragraph.parrafo2.field_textolargo
+field_name: field_textolargo
+entity_type: paragraph
+bundle: parrafo2
+label: textoLargo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

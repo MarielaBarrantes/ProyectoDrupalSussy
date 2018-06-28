@@ -1,0 +1,43 @@
+uuid: cd6f907e-c3bf-433b-8a91-6f4c7a0066e2
+langcode: en
+status: true
+dependencies: {  }
+id: users
+migration_tags: null
+migration_group: default
+label: Users
+source:
+  plugin: csv
+  path: modules/custom/drupal_itm_demos/csv/users.csv
+  header_row_count: 1
+  keys:
+    - id
+  delimiter: ','
+  enclosure: '"'
+  column_names:
+    -
+      id: ID
+    -
+      username: Username
+    -
+      email: Email
+    -
+      full_name: 'Full Name'
+    -
+      roles: Roles
+process:
+  name: username
+  mail: email
+  field_full_name: full_name
+  status:
+    -
+      plugin: default_value
+      default_value: 1
+  roles:
+    -
+      plugin: explode
+      source: roles
+      delimiter: ','
+destination:
+  plugin: 'entity:user'
+migration_dependencies: null

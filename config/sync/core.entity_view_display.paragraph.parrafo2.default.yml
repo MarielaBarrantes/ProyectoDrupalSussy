@@ -1,0 +1,22 @@
+uuid: 82f0d1ed-e9d6-42be-959f-1b34513a9653
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.parrafo2.field_textolargo
+    - paragraphs.paragraphs_type.parrafo2
+  module:
+    - text
+id: paragraph.parrafo2.default
+targetEntityType: paragraph
+bundle: parrafo2
+mode: default
+content:
+  field_textolargo:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,35 @@
+uuid: ce98da51-9199-418c-ab61-6e7836f9204c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.parrafosimportantes.field_parrafo
+    - field.field.paragraph.parrafosimportantes.field_titulo
+    - paragraphs.paragraphs_type.parrafosimportantes
+  module:
+    - text
+id: paragraph.parrafosimportantes.default
+targetEntityType: paragraph
+bundle: parrafosimportantes
+mode: default
+content:
+  field_parrafo:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_titulo:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

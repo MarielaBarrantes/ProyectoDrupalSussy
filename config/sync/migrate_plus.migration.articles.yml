@@ -1,0 +1,64 @@
+uuid: 5c9926e5-c751-45c6-a07e-a8abd60365c7
+langcode: en
+status: true
+dependencies: {  }
+id: articles
+migration_tags: null
+migration_group: default
+label: articles
+source:
+  plugin: csv
+  path: modules/custom/drupal_itm_demos/csv/articles.csv
+  header_row_count: 1
+  keys:
+    - id
+  delimiter: ','
+  enclosure: '"'
+  column_names:
+    -
+      id: ID
+    -
+      author: Author
+    -
+      title: Title
+    -
+      body: Body
+    -
+      tags: Tags
+process:
+  title: title
+  status:
+    -
+      plugin: default_value
+      default_value: 1
+  type:
+    -
+      plugin: default_value
+      default_value: article
+  body/value: body
+  body/format:
+    -
+      plugin: default_value
+      default_value: full_html
+  uid:
+    -
+      plugin: migration_lookup
+      migration: users
+      source: author
+  field_tags:
+    -
+      plugin: explode
+      source: tags
+      delimiter: ','
+    -
+      plugin: entity_generate
+      value_key: name
+      bundle_key: vid
+      bundle: tags
+      entity_type: taxonomy_term
+      ignore_case: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - users

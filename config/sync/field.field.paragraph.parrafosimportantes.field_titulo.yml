@@ -1,0 +1,21 @@
+uuid: 5c108c0a-b241-4842-bbed-4f34d25dbabd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.parrafosimportantes
+  module:
+    - text
+id: paragraph.parrafosimportantes.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: parrafosimportantes
+label: Titulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

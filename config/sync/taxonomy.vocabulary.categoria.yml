@@ -1,0 +1,9 @@
+uuid: fbead26a-1f6b-4eca-b5c5-5c8b7fd33da3
+langcode: en
+status: true
+dependencies: {  }
+name: Categoria
+vid: categoria
+description: ''
+hierarchy: 0
+weight: 0

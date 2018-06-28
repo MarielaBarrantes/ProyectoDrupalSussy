@@ -1,0 +1,64 @@
+uuid: 10d52423-5e0b-46f8-be3e-9319ab6f60ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.person
+  module:
+    - ckeditor
+format: person
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - Paste
+            - RemoveFormat
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - Copy
+            - BulletedList
+            - Underline
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Format
+        -
+          name: Tools
+          items:
+            - JustifyLeft
+            - JustifyRight
+            - HorizontalRule
+            - JustifyCenter
+            - JustifyBlock
+            - Source
+        -
+          name: col
+          items:
+            - Cut
+            - Maximize
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

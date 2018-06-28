@@ -1,0 +1,37 @@
+uuid: b8968311-6145-470e-a1e1-c5c489803b68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textosimportant
+    - node.type.page1
+    - paragraphs.paragraphs_type.parrafosimportantes
+  module:
+    - entity_reference_revisions
+id: node.page1.field_textosimportant
+field_name: field_textosimportant
+entity_type: node
+bundle: page1
+label: TextosImportantes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      parrafosimportantes: parrafosimportantes
+    target_bundles_drag_drop:
+      imageparagraph:
+        weight: 4
+        enabled: false
+      parrafosimportantes:
+        enabled: true
+        weight: 5
+      texto:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

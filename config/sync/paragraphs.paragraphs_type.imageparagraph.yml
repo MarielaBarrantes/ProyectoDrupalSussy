@@ -1,0 +1,11 @@
+uuid: 932c5392-71e7-4823-a246-fbd00e03d895
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:f3020a3a-6739-412d-b44a-9d0d9bf6e79e'
+id: imageparagraph
+label: ImageParagraph
+icon_uuid: f3020a3a-6739-412d-b44a-9d0d9bf6e79e
+description: ''
+behavior_plugins: {  }

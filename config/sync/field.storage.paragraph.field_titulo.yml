@@ -1,0 +1,20 @@
+uuid: 909df0ef-2905-47b1-85e0-049c689f915d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
