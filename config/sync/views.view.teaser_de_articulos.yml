@@ -247,8 +247,21 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Estos son algunos artículos de los que podrás disfrutar en este sitio'
-      header: {  }
+      title: 'teaser articulos'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: 'Estos son algunos artículos de los que podrás disfrutar en este sitio'
+            format: basic_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
