@@ -1,0 +1,22 @@
+uuid: ba3d7582-1353-478e-8aba-ee5eea4edb41
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_articulos
+label: 'pattern Articulos'
+type: 'canonical_entities:node'
+pattern: '[node:field_category][node:title]'
+selection_criteria:
+  18296f91-724d-47f1-890e-1cd79e8c486d:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 18296f91-724d-47f1-890e-1cd79e8c486d
+selection_logic: and
+weight: -5
+relationships: {  }

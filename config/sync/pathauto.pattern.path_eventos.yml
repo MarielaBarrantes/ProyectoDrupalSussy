@@ -1,0 +1,22 @@
+uuid: 956c3f17-6ae3-4351-8ac1-0a43369f0b6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: path_eventos
+label: 'Path Eventos'
+type: 'canonical_entities:node'
+pattern: '[node:created]'
+selection_criteria:
+  858e2880-23aa-4029-b74a-e8d106bb7a29:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 858e2880-23aa-4029-b74a-e8d106bb7a29
+selection_logic: and
+weight: -5
+relationships: {  }
